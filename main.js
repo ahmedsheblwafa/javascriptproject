@@ -1,4 +1,5 @@
-var subCat1 = document.getElementById("sub-cat1");
+var brands1 = document.getElementById("brands1");
+var clearanceDiv1 = document.getElementById("clearance1")
 
 // creating elements :-
 
@@ -13,13 +14,15 @@ var brand4 = document.createElement("li");
 // entering elements value
 
 function pic1(){
+    clearanceDiv1.style.display="block"
 
-    brand1.innerHTML = '<a href="#sub-cat1" onclick="samsung()"> samsung </a>';
-    brand2.innerText = "nokia";
-    brand3.innerText = "shaome";
-    brand4.innerText = "oppo";
 
-    subCat1.appendChild(subCat1Data);
+    brand1.innerHTML = '<a href="#productstarget" onclick="samsung()"> samsung </a>';
+    brand2.innerHTML = '<a id="productstarget" href="#sub-cat1">nokia</a>';
+    brand3.innerHTML = '<a href="#sub-cat1">shaomi</a>';
+    brand4.innerHTML = '<a href="#sub-cat1">hwawi</a>';
+
+    brands1.appendChild(subCat1Data);
 
     subCat1Data.appendChild(brand1);
     subCat1Data.appendChild(brand2);
@@ -30,14 +33,28 @@ function pic1(){
 
 }
  
+// creating the brand products
+
+var buttonDiv = document.createElement("div");
 var leftButton = document.createElement("button");
 var rightButton = document.createElement("button");
-var containerDiv = document.createElement("div");
-containerDiv.setAttribute("id","temp");
+var slideshow = document.createElement("img");
+
+// giving data for created elements
+
+slideshow.setAttribute("src","img/samsung.jpg")
+leftButton.innerText="back"
+rightButton.innerText="next"
 
 function samsung(){
-    subCat1.appendChild(containerDiv);
-    console.log("alaa")
+
+document.getElementById("products1").appendChild(slideshow)
+document.getElementById("products1").appendChild(buttonDiv)
+buttonDiv.appendChild(leftButton)
+buttonDiv.appendChild(rightButton)
+buttonDiv.style.width="140px";
+buttonDiv.style.margin="auto";
+
 
 
 

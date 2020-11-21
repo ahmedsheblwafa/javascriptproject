@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+  }
 *{list-style-type: none;}
 
 body {
@@ -147,8 +150,21 @@ margin-bottom: 50px;
 
 }
 
-#temp{
+#clearance1{
     background-color: #777;
     height: 200px
     
 }
+#products1 
+{
+    width : 225px;
+    margin: auto;
+}
+
+#products1 button
+{
+    width: 50px;
+    height: 20px;
+    margin-left: 5px;
+}
+
