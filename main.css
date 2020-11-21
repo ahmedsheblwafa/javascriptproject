@@ -1,7 +1,10 @@
 *{list-style-type: none;}
+
 body {
     background-color: #fff;
     color: #777;
+    margin-top: 140px;
+    
     font: normal 15px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 p {
@@ -50,7 +53,9 @@ a {
 }
 a:hover {
     color: #02b8dd;
-}
+    
+ }
+
 strong {
     font-weight: bold;
 }
@@ -74,6 +79,12 @@ small {
 header {
 
     background-color: #E9E9E9;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 110px;
+
+    
 }
 
 #logo{
@@ -84,7 +95,7 @@ header {
 #navlists{
     display: inline-block;
     float: right;
-    margin-top: 60px;
+    margin-top: 50px;
     font-size: x-large;
     margin-right: 20px;
 }
@@ -122,4 +133,22 @@ margin-bottom: 50px;
     margin: auto;
     box-shadow: 1px 1px 5px 5px rgb(204, 204, 204);
 
+}
+
+/* Start sub-cat */
+
+#sub-cat1{
+    font-size: 50px;
+    text-transform: capitalize;
+    /* color: #4CAF50; */
+    /* color: rgb(17, 200, 124); */
+    display: inline;
+    color: #02b8dd;
+
+}
+
+#temp{
+    background-color: #777;
+    height: 200px
+    
 }
