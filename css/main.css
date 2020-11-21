@@ -1,6 +1,3 @@
-html {
-    scroll-behavior: smooth;
-  }
 *{list-style-type: none;}
 
 body {
@@ -97,7 +94,7 @@ header {
 
 #navlists{
     display: inline-block;
-    float : right;
+    float: right;
     margin-top: 50px;
     font-size: x-large;
     margin-right: 20px;
@@ -150,11 +147,12 @@ margin-bottom: 50px;
 
 }
 
-#clearance1{
+#temp{
     background-color: #777;
     height: 200px
     
 }
+<<<<<<< HEAD:css/main.css
 
 #products1 
 {
@@ -169,5 +167,7 @@ margin-bottom: 50px;
     margin-left: 5px;
 }
 
+=======
+>>>>>>> 4e5ed8c77b63441be8a0d8a456702d066dc1177d:main.css
 
 
