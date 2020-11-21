@@ -112,11 +112,14 @@ a {
 
 .container {
 margin-top: 30px;
-background-color: rgb(168, 196, 196);
+background-color: #fff;
+margin-bottom: 50px;
 }
 
 .cat1div , .cat2div, .cat3div, .cat4div{
     width: 1292px;
     height: 496px;
     margin: auto;
+    box-shadow: 1px 1px 5px 5px rgb(204, 204, 204);
+
 }
