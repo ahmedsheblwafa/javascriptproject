@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="main.css">
+    <title>Your Cart</title>
+</head>
+
+<body>
+    <!-- navbar menu -->
+    <header>
+        <div id="container">
+            <div id="logo">
+                <a href="#"><img src="img/Capture.PNG" width="110px"></a>
+            </div>
+            <div id="navlists">
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">favourites</a></li>
+                    <li><a href="#">cart</a></li>
+                    <li><a href="#">login</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <!--************************* left section  ******************************* -->
+
+    <!-- title of the cart  represent 2/3 of page width from left-->
+    <div class="cart-content">
+        <table id="cart-content">
+
+            <tr>
+                <th style="text-align: left;" >Shopping Cart</th>
+                <!-- <th style="width:33%"></th> -->
+                <th colspan="5" style="text-align: right;">x Item(s)</th>
+                <!-- <hr > -->
+            </tr>
+
+            <!-- sub table header -->
+            <tr>
+                <td>PRODUCT DETAILS</td>
+                <td>QUANTITY</td>
+                <td>PRICE</td>
+                <td>TOTAL</td>
+            </tr>
+            <!-- product 1 -->
+            <tr>
+                <!-- product image -->
+                <td>
+                    <img src="1.jpg" id="product-img">
+                    <!-- product details -->
+                    <br>
+                    <label>Product name</label>
+                    <br><br>
+                    <a href="">Category</a>
+                    <br><br>
+                    <button id="btn">Remove</button>
+                </td>
+                <!-- quantity -->
+                <td>
+                    <button id="numBtn">-</button>
+                    <input type="checkbox">
+                    <button id="numBtn">+</button>
+                </td>
+                <!-- price -->
+                <td>L.E ***</td>
+                <!-- total depends on quantity -->
+                <td> quantity*price L.E</td>
+            </tr>
+            <!-- product 2 -->
+            <tr>
+                <!-- product image -->
+                <td>
+                    <img src="1.jpg" id="product-img">
+                    <!-- product details -->
+                    <br>
+                    <label>Product name</label>
+                    <br><br>
+                    <a href="">Category</a>
+                    <br><br>
+                    <button id="btn">Remove</button>
+                </td>
+                <!-- quantity -->
+                <td>
+                    <button id="numBtn">-</button>
+                    <input type="checkbox">
+                    <button id="numBtn">+</button>
+                </td>
+                <!-- price -->
+                <td>L.E ***</td>
+                <!-- total depends on quantity -->
+                <td> quantity*price L.E</td>
+            </tr>
+            <!-- product 3 -->
+            <tr>
+                <!-- product image -->
+                <td>
+                    <img src="1.jpg" id="product-img">
+                    <!-- product details -->
+                    <br>
+                    <label>Product name</label>
+                    <br><br>
+                    <a href="">Category</a>
+                    <br><br>
+                    <button id="btn">Remove</button>
+                </td>
+                <!-- quantity -->
+                <td>
+                    <button id="numBtn">-</button>
+                    <input type="checkbox">
+                    <button id="numBtn">+</button>
+                </td>
+                <!-- price -->
+                <td>L.E ***</td>
+                <!-- total depends on quantity -->
+                <td> quantity*price L.E</td>
+            </tr>
+
+        </table>
+    </div>
+
+    <!--************************* right section  ******************************* -->
+
+    <!-- check out  represent 1/3 of the page width at the right side-->
+    <div class="checkout">
+        <table id="checkout">
+            <tr>
+                <th colspan="2">Order Summary</th>
+            </tr>
+            <tr>
+                <td>ITEM x</td>
+                <td>L.E ***</td>
+            </tr>
+            <tr>
+                <!-- dropdown menu -->
+                <td colspan="2">
+                    <lable>Shipping Method</lable>
+                    <br><br>
+                    <!-- placeholder -->
+                    <div class="dropdown">
+                    <button class="dropbtn">Shipping Method</button>
+                        <div class="dropdown-content">
+                           <a> standered Delivery - 50 L.E </a>
+                           <a>Store - 20 L.E </a>
+                           <a>Instant Delivery - 100 L.E</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <lable>PROMO CODE</lable>
+                    <br><br>
+                    <input type="text" placeholder="Enter your code">
+                    <button id="btn">Apply</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label>TOTAL COST</label>
+                    <br><br>
+                    L.E ***
+                    <br><br>
+
+                    <button id="btn">CHECKOUT</button>
+                    <br><br>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

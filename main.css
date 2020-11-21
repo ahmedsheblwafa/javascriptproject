@@ -97,7 +97,7 @@ header {
 
 #navlists{
     display: inline-block;
-    float: right;
+    float : right;
     margin-top: 50px;
     font-size: x-large;
     margin-right: 20px;
@@ -155,6 +155,7 @@ margin-bottom: 50px;
     height: 200px
     
 }
+ HEAD
 #products1 
 {
     width : 225px;
@@ -167,4 +168,5 @@ margin-bottom: 50px;
     height: 20px;
     margin-left: 5px;
 }
+
 
