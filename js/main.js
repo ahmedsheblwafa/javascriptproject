@@ -42,7 +42,7 @@ var slideshow = document.createElement("img");
 
 // giving data for created elements
 
-slideshow.setAttribute("src","img/samsung.jpg")
+slideshow.setAttribute("src","../img/samsung.jpg")
 leftButton.innerText="back"
 rightButton.innerText="next"
 
