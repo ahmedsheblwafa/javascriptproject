@@ -74,4 +74,35 @@ function openNav() {
 // Initiate zoom effect:
 imageZoom("myimage", "myresult");
 
+// create cart array starttin from buy button-----------------------Ahmed Shebl------------------------------------------------
 
+var buyBtn = document.getElementById("buylaptop");
+
+
+
+var addToCart = function () {
+  if (JSON.parse(localStorage.getItem("cartArr")))
+  {
+    var cartArr = JSON.parse(localStorage.getItem("cartArr"))
+    cartArr.push({
+    category: "electronics",
+    subcategory: "laptops",
+    brand: "Dell",
+    price: 15000,
+    picPath: "../img/dell1.jpg"
+  })
+  localStorage.setItem('cartArr', JSON.stringify(cartArr));}
+  else{
+    var cartArr = []
+    cartArr.push({
+      category: "electronics",
+      subcategory: "laptops",
+      brand: "Dell",
+      price: 15000,
+      picPath: "../img/dell1.jpg"
+    })
+    localStorage.setItem('cartArr', JSON.stringify(cartArr))
+  }
+}
+
+buyBtn.addEventListener("click",addToCart);
