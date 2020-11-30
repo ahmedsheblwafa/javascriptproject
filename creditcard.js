@@ -1,3 +1,5 @@
+
+
 var brands1 = document.getElementById("brands1");
 var clearanceDiv1 = document.getElementById("clearance1")
 
@@ -32,7 +34,7 @@ var clearanceDiv1 = document.getElementById("clearance1")
 
 
 // }
- 
+
 // // creating the brand products
 
 // var buttonDiv = document.createElement("div");
@@ -64,7 +66,7 @@ var clearanceDiv1 = document.getElementById("clearance1")
 //Nav
 
 function openNav() {
-  
+
   document.getElementById("mySidebar").style.width = "250px";
   document.getElementById("main").style.marginLeft = "250px";
 }
@@ -90,10 +92,9 @@ var txtEyear =document.getElementById("expyear");
 var txtCvv =document.getElementById("cvv");
 
 
- 
+
 function add()
 {
-  
 
   var arr = new Array () ;
   var addValue  =  txtAddress.value;
@@ -107,13 +108,13 @@ function add()
   var emonthValue = txtEmonth.value;
   var eyearValue = txtEyear.value;
   var cvvValue = txtCvv.value;
-   
+
 
   if(addValue != "" &&   nameValue != "" && emailValue!= "" && cityValue!=""  && stateValue != "" && zipValue != "" &&   ncardValue != "" && cardnValue!= "" && emonthValue!=""  && eyearValue != "" && cvvValue !="")
   {
     getData ();
     arr.push
-    
+
     ({   
       fname:txtName.value ,
       address:txtAddress.value ,
@@ -126,36 +127,36 @@ function add()
       expmonth:txtEmonth.value,
       expyear: txtEyear.value,
       cvv:txtCvv.value,
-  
 
-    
+
+
 
     })
     localStorage.setItem("local Data",JSON.stringify(arr) );
   }  
 else {
     if (addValue == ""){
-           
+
       alert("enter your Address");
     }
     if(nameValue == ""){
-     
+
       alert("enter your Name");
     }
     if(emailValue == ""){
       alert("enter your Email");
      }
- 
+
     if(cityValue == ""){
       alert("enter your City ");
-     
+
     }
     if(stateValue == ""){
-           
+
      alert("enter your State");
     }
     if(zipValue == ""){
-   
+
      alert("enter your Zip");
     }
     if(ncardValue == ""){
@@ -163,19 +164,19 @@ else {
     }
     if(cardnValue == ""){
       alert("enter your Card Number ");
-   
+
     }
     if(emonthValue == ""){
       alert("enter the Exp Month");
-   
+
     }
     if(eyearValue == ""){
       alert("enter your Exp Year");
- 
+
     }
     if(cvvValue == ""){
       alert("enter your Cvv");
- 
+
     }
 
 
@@ -190,14 +191,14 @@ else {
 function getData () 
 {
     var str = localStorage.getItem("localData");
-    
-    
+
+
     if(str!= null) 
     {
         arr = JSON.parse(str);
-       
-         
-        
+
+
+
     }
 
 }
