@@ -7,20 +7,74 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     
-    <link rel="stylesheet" href="css/04_base.css">
-    <link rel="stylesheet" href="css/04_form.css">
-
+    <!-- <link rel="stylesheet" href="../css/04_base.css"> -->
+    <!-- <link rel="stylesheet" href="../css/04_form.css"> -->
+<link rel="stylesheet" href="login.css">
 </head>
 
 <body id="loginLanding">
-   <main class="wrapper">
-		<header id="logo">
+        <!-- navbar menu -->
+        <header>
+            <div id="container">
+                <div id="logo">
+                    <a href="#"><img src="Capture.PNG" width="110px"></a>
+                </div>
+                <div id="navlists">
+                    <ul>
+                        <li><a href="../html/index.html">home</a></li>
+                        <li><a href="../html/favourites.html">favourites</a></li>
+                        <li><a href="#">cart</a></li>
+                        <li><a href="../html/login.html">login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+<!-- ------------------------------------------------------------------------------------ -->
+
+
+<div class="container">
+  <form action="/action_page.php">
+    <table id="content">
+      <div id="header1">
+        <h2>Login to your Trade Goods account</h2>
+      </div>
+            <tr class="row">
+                <td class="col-25">
+        <label for="email"><i class="fas fa-envelope"></i> Email</label>
+      </td>
+      <td class="col-75">
+        <input type="email" id="email" name="email"  required>
+      </td>
+    </tr>
+    <tr class="row">
+      <td class="col-25">
+        <label for="password" ><i class="fas fa-lock"></i> Password</label>
+      </td>
+      <td class="col-75" id="pass">
+        <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+
+        <i class="fas fa-eye eyeIcon"></i>
+    </div>
+</td>
+</tr>
+  
+  </table>
+  <br><br>
+  <div>
+    <button id="loginBtn">Login <i class="fas fa-angle-right"></i></button>
+</div>
+  <p><a href="#">Forgot your password?</a> <br> Don’t have an account? <a href="signup.html">Join Now</a>.</p>
+    </form>
+  </div>
+
+<!-- ------------------------------------------------------------------------------------ -->
+   <!-- <main class="wrapper">
+		 <header id="logo">
 		   <h1>Trade Goods</h1>
-	   </header>
+       </header>  
+       <div id="content">
 		<section id="sign">
-			<header>
 				<h1>Login to your Trade Goods account</h1>
-			</header>
 			<article id="loginForm">
 				<form action="#" method="post">
 
@@ -43,14 +97,15 @@
 					</aside>
 				</form>
 			</article>
-		</section>
+        </section>
+       </div>
    </main>
-    
+     -->
     <script>
 
         const visToggle = document.querySelector('.eyeIcon');
 
-        const input = document.querySelector('#pwdWrap input');
+        const input = document.querySelector('#password');
         
         var password = true;
         
@@ -66,8 +121,6 @@
                  }
             password = !password;
               });
-
-        
     </script>
 </body>
 </html>
