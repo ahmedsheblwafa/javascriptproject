@@ -1,37 +1,49 @@
-<!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>favourites</title>
+        <title>product</title>
         <link rel="stylesheet" href="../css/fav.css">
         <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
 
-    </head>
-    <body>
-        <!-- Adding the header of the page -->
-        <!-- 
-            ------------------------------------------
-            -----------------------------------------
-         -->
-        <header>
-            <div id="container">
-                <div id="logo">
-                    <a href="#"><img src="../img/Capture.PNG" width="110px"></a>
-                </div>
-                <div id="navlists">
-                    <ul>
-                        <li><a href="../html/index.html">home</a></li>
-                        <li><a href="../html/fav.html">favourites</a></li>
-                        <li><a href="../html/cart.html">cart</a></li>
-                        <li><a href="../login.html">login</a></li>
-                        
-                    </ul>
-                </div>
-            </div>
-        </header>
+        <!DOCTYPE html>
+        <html>
+            <head>
+                <meta charset="UTF-8">
+                <title>favourites</title>
+                <link rel="stylesheet" href="../css/product.css">
+                <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
+        
+            </head>
+            <body>
+                <header>
+                    <div id="container">
+                        <div id="mySidebar" class="sidebar">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                            <a href="#">About</a>
+                            <a href="#">Services</a>
+                            <a href="#">Clients</a>
+                            <a href="#">Contact</a>
+                          </div>
+                          <div id="main">
+                            <button class="openbtn" onclick="openNav()">☰ </button>  
+                          </div>
+                        <div id="logo">
+                            <a href="../html/index.html"><img src="../img/Capture.PNG" width="110px"></a>
+                        </div>
+                        <div id="navlists">
+                            <ul>
+                                <li><a class="word" href="../html/index.html">home</a></li>
+                                <li><a class=" word"href="../html/fav.html">favourites</a></li>
+                                <li><a class=" word" href="../html/cart.html">cart</a></li>
+                                <li><a  class=" word"href="../html/login.html">login</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </header>
         <!-- title of the favourites -->
         <div class="fav-content">
             <p id="message"></p>
+            <form>
             <table id="fav-content">
     
                 <tr>
@@ -74,6 +86,8 @@
                         <br>
                         <button type="button"value="" id="bt">add to cart</button></td>
                 </tr>
+                
+            </form>
     
 
     </body>
