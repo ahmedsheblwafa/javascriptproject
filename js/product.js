@@ -76,8 +76,8 @@ imageZoom("myimage", "myresult");
 
 // create cart array starttin from buy button-----------------------Ahmed Shebl------------------------------------------------
 
-var buyBtn = document.getElementById("buylaptop"); //buy laptop-------------------------------------------------
-var favBtn = document.getElementById("favouritlaptop");
+var buyBtn = document.getElementById("buy"); //buy laptop-------------------------------------------------
+var favBtn = document.getElementById("favourit");
 
 
 var addToCart = function () {
@@ -110,7 +110,7 @@ buyBtn.addEventListener("click",addToCart);
 var addTofav = function () {
   if (JSON.parse(localStorage.getItem("favArr")))
   {
-    var cartArr = JSON.parse(localStorage.getItem("favArr"))
+    var favArr = JSON.parse(localStorage.getItem("favArr"))
     favArr.push({
       category: document.getElementById("category").innerText,
       subcategory: document.getElementById("subcat").innerText,
