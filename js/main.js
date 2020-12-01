@@ -1,3 +1,17 @@
+// creating product objects 
+// var productsArr = [
+//     {
+//  name  : "",
+//  cat : "clothes",
+//  subCat : "",
+//  brand : "",
+//  img : "",
+//  addtoCart (){
+
+//  }
+// }
+// ]
+
 var brands1 = document.getElementById("brands1");
 var clearanceDiv1 = document.getElementById("clearance1")
 
