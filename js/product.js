@@ -76,8 +76,8 @@ imageZoom("myimage", "myresult");
 
 // create cart array starttin from buy button-----------------------Ahmed Shebl------------------------------------------------
 
-var buyBtn = document.getElementById("buylaptop");
-
+var buyBtn = document.getElementById("buylaptop"); //buy laptop-------------------------------------------------
+var favBtn = document.getElementById("favouritlaptop");
 
 
 var addToCart = function () {
@@ -85,24 +85,52 @@ var addToCart = function () {
   {
     var cartArr = JSON.parse(localStorage.getItem("cartArr"))
     cartArr.push({
-    category: "electronics",
-    subcategory: "laptops",
-    brand: "Dell",
-    price: 15000,
-    picPath: "../img/dell1.jpg"
-  })
+      category: document.getElementById("category").innerText,
+      subcategory: document.getElementById("subcat").innerText,
+      brand: document.getElementById("brand").innerText,
+      price: Number(document.getElementById("price").innerHTML),
+      picPath: document.getElementById("myimage").getAttribute("src")
+    })
   localStorage.setItem('cartArr', JSON.stringify(cartArr));}
   else{
     var cartArr = []
     cartArr.push({
-      category: "electronics",
-      subcategory: "laptops",
-      brand: "Dell",
-      price: 15000,
-      picPath: "../img/dell1.jpg"
+      category: document.getElementById("category").innerText,
+      subcategory: document.getElementById("subcat").innerText,
+      brand: document.getElementById("brand").innerText,
+      price: Number(document.getElementById("price").innerHTML),
+      picPath: document.getElementById("myimage").getAttribute("src")
     })
     localStorage.setItem('cartArr', JSON.stringify(cartArr))
   }
 }
 
 buyBtn.addEventListener("click",addToCart);
+                                                //add to favourites------------Ahmed Shebl ----------------------------------------
+var addTofav = function () {
+  if (JSON.parse(localStorage.getItem("favArr")))
+  {
+    var cartArr = JSON.parse(localStorage.getItem("favArr"))
+    favArr.push({
+      category: document.getElementById("category").innerText,
+      subcategory: document.getElementById("subcat").innerText,
+      brand: document.getElementById("brand").innerText,
+      price: Number(document.getElementById("price").innerHTML),
+      picPath: document.getElementById("myimage").getAttribute("src")
+    })
+  localStorage.setItem('favArr', JSON.stringify(favArr));}
+  else{
+    var favArr = []
+    favArr.push({
+      category: document.getElementById("category").innerText,
+      subcategory: document.getElementById("subcat").innerText,
+      brand: document.getElementById("brand").innerText,
+      price: Number(document.getElementById("price").innerHTML),
+      picPath: document.getElementById("myimage").getAttribute("src")
+    })
+    localStorage.setItem('favArr', JSON.stringify(favArr))
+  }
+}
+
+favBtn.addEventListener("click",addTofav);
+
