@@ -61,21 +61,14 @@ header ul li {
     left: 10%;
     
 }
-input[type=email] {
+input {
     width: 85%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
   }
-input[type=password] {
-    width: 85%;
-    padding-left: .5%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-  }
+
   
   label {
     padding: 12px 12px 12px 0;

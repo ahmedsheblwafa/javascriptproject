@@ -15,7 +15,7 @@
   <header>
     <div id="container">
       <div id="logo">
-        <a href="#"><img src="Capture.PNG" width="110px"></a>
+        <a href="#"><img src="../img/Capture.PNG" width="110px"></a>
       </div>
       <div id="navlists">
         <ul>
@@ -48,11 +48,12 @@
             <label for="password"><i class="fas fa-lock"></i> Password</label>
           </td>
           <td class="col-75" id="pass">
-            <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            <input type="password" id="password2" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
               title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
               required>
 
-         <i class="fas fa-eye eyeIcon"></i>
+         <i class="fas fa-eye eyeIcon"></i><br>
+         <P id="warning" style="display: none;color: red;">wrong email or password Please Signup first</P>
   </div>
   </td>
   </tr>
@@ -66,7 +67,7 @@
   </div>
   <script>
     const visToggle = document.querySelector('.eyeIcon');
-    const input = document.querySelector('#password');
+    const input = document.querySelector('#password2');
     var password = true;
     visToggle.addEventListener('click', function () {
       if (password) {
@@ -80,26 +81,11 @@
       }
       password = !password;
     });
-    // console.log("hello");
-    userArray = [];
-    // console.log(userArray);
-    function userObject() {
-      return {
-        email: document.getElementById("email").value,
-        password: document.getElementById("password").value
-      }
-    }
-    function check() {
-      let user = userObject();
-      if (user.email == "" || user.password == "") {
-
-        alert("please enter all data")
-
-        return false;
-      }
-    window.location.replace("index.html");
-    }
+    
+    
+    
   </script>
+  <script src="../js/login.js"></script>
 </body>
 
 </html>

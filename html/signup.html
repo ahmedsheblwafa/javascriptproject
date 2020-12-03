@@ -136,8 +136,9 @@
             document.querySelector('#cty').classList.toggle('show'); // togle the tooltip to show or hide
             document.querySelector('#cty').classList.toggle('hide');
         })
-
-        var userArray = [];
+        if(JSON.parse(localStorage.getItem("userData")))
+        {var userArray = JSON.parse(localStorage.getItem("userData"));}
+        else userArray = [];
         function userObject() {
             return {
                 name: document.getElementById("name").value,
@@ -168,7 +169,7 @@
                 return false;
             }
             addUser(user);
-            window.location.replace("index.html");
+            window.location.replace("login.html");
         }
 
         function addUser(user) {

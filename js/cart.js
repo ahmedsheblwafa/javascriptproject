@@ -59,6 +59,7 @@ if (JSON.parse(localStorage.getItem("cartArr")))
             cell5.innerHTML = `${cartArr[i].price}`
             cell6.innerHTML = cell3.innerHTML*cell5.innerHTML
             cell7.innerHTML = `<button id="btn" >Remove</button>`
+        
           
            cell2.addEventListener("click",dec)
            cell4.addEventListener("click",inc)
